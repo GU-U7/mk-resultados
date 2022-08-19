@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mk-civilwar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="margin: 3em">
+<div style="display: flex; justify-content: space-between">
+<div class="card" style="width: 40rem;">
+    <div class="card-body">
+<form>
+    <table class="table">
+        <tr>
+            <th><label for="nombre_copa">Copa</label></th>
+            <td><input class="form-control" type="text" name="nombre_copa" id="nombre_copa"></td>
+        </tr>
+        <tr>
+            <th>Puesto</th>
+            <th>Jugador</th>
+            <th>Puntos</th>
+            <!--<th>Puntaje</th>-->
+        </tr>
+        <tr>
+            <th>1er</th>
+            <td><input  class="form-control" type="text" value="persona_1" id="persona_1"></td>
+            <td><input  class="form-control" type="number" value="0" name="puntos_copa_1" id="puntos_copa_1"></td>
+            <!--<td><input type="number" name="puntos_torneo_1" id="puntos_torneo_1"></td>-->
+        </tr>
+        <tr>
+            <th>2do</th>
+            <td><input  class="form-control" type="text" value="persona_2" id="persona_2"></td>
+            <td><input  class="form-control" type="number" value="0" name="puntos_copa_2" id="puntos_copa_2"></td>
+            <!--<td><input type="number" name="puntos_torneo_2" id="puntos_torneo_2"></td>-->
+        </tr>
+        <tr>
+            <th>3er</th>
+            <td><input class="form-control" type="text" value="persona_3" id="persona_3"></td>
+            <td><input class="form-control" type="number" value="0" name="puntos_copa_3" id="puntos_copa_3"></td>
+            <!--<td><input type="number" name="puntos_torneo_3" id="puntos_torneo_3"></td>-->
+        </tr>
+        <tr>
+            <th>4to</th>
+            <td><input  class="form-control" type="text" value="persona_4" id="persona_4"></td>
+            <td><input  class="form-control" type="number" value="0" name="puntos_copa_4" id="puntos_copa_4"></td>
+            <!--<td><input type="number" name="puntos_torneo_4" id="puntos_torneo_4"></td>-->
+        </tr>
+    </table>
+    <button class="btn btn-primary" id="guardar_copa">Agregar</button>
+</form>
+    </div>
+</div>
+
+    <div>
+    <button id="guardar" class="btn btn-primary">Guardar</button>
+        <br><br>
+    <button id="cargar" class="btn btn-primary">Cargar</button>
+    </div>
+
+<div class="card" style="width: 40rem;">
+    <div class="card-body">
+<table class="table" id="tabla_posiciones">
+    <tr>
+        <th>Puesto</th>
+        <th>Jugador</th>
+        <th>Copas Ganadas</th>
+        <th>Copas Jugadas</th>
+        <th>Puntaje</th>
+        <th>Puntos</th>
+    </tr>
+</table>
+    </div>
+</div>
+</div>
+
+<br>
+
+<div id="cartas">
+</div>
+
+<script src="/archivos/index.js"></script>
+</body>
+</html>
